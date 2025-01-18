@@ -302,6 +302,7 @@ button:hover {
     margin: 100px auto;
     /* border-radius: 10px; */
     font-size: 20px;
+    gap: 30px;
 }
 .footer-container .section {
     margin-bottom: 20px;
@@ -309,12 +310,12 @@ button:hover {
 .footer-container .section-apl {
     font-size: 20px;
 }
-.footer-container .section-apl i {
+/*.footer-container .section-apl i {
     margin-top: -10px;
     display: flex;
     justify-content: flex-end;
     margin: 0px 80px -20px 80px;
-}
+}*/
 .footer-container h3 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -330,10 +331,30 @@ button:hover {
 }
 .footer-container button {
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 10px;
 }
-
-
+table.social-media-list {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+table.social-media-list tr.table-row {
+     border-bottom: 1px solid #eeeeee;
+     cursor: pointer;
+}
+table.social-media-list td {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+table.social-media-list td.label {
+    font-size: 16px;
+}
+table.social-media-list td.icon {
+    text-align: center;
+}
 
 
 
