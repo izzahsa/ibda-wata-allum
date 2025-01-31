@@ -3,12 +3,13 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body {
-    padding: 0px;
-    margin: 0px;
+    /* padding: 0;
+    margin: 0; */
     /* position: fixed; */
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     width: 100%;
+    margin-right: -0px;
 }
 .grid-container-2 {
     display: grid;
@@ -122,6 +123,16 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
+    margin: 40px auto;
+    width: 60%;
+}
+.grid-item-4 {
+    display: none;
+}
+.feature-list-a {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
     margin-top: 40px;
 }
 .feature-list-library {
@@ -133,7 +144,7 @@ button:hover {
 .feature-box {
     height: 500px;
     border-radius: 5px;
-    position: relative;
+    /* position: relative; */
     box-shadow: 10px 10px 2px #bdbdbd;
 }
 .feature-box-platform {
@@ -157,7 +168,7 @@ button:hover {
     height: 250px;
     padding: 20px;
     color: white;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
 }
 .feature-box-white {
@@ -168,7 +179,7 @@ button:hover {
     justify-content: center;
     text-align: center;
     border-radius: 3px;
-    position: relative;
+    /* position: relative; */
     cursor: pointer;
 }
 .section-info h3 {
@@ -212,7 +223,7 @@ button:hover {
     font-size: 13px;
     margin-right: 10px;
     margin-left: 10px; 
-    position: absolute; 
+    /* position: absolute;  */
     bottom: 0;
 }
 .library-info h5 i {
@@ -394,7 +405,7 @@ table.social-media-list td.icon {
 /* ukuran medium tablet */
 @media (max-width: 1150px) {
     .container {
-        max-width: 1000px;
+        width: 100%;
     }
     .hero h2 {
         font-size: 20px;
@@ -422,16 +433,34 @@ table.social-media-list td.icon {
 }
 
 /* ukuran small tablet */
-@media (max-width: 1024px) {
+@media (max-width: 1050px) {
     .container {
         max-width: 750px;
+    }
+    .feature-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .grid-item-4 {
+        display: none;
+    }
+    .grid-item-3 {
+        display: none;
     }
 }
 
 /* ukuran hp besar */
 @media (max-width: 800px) {
     .container {
-        max-width: 600px;
+        max-width: 700px;
+    }
+    .feature-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid-item-4 {
+        display: none;
+    }
+    .grid-item-3 {
+        display: none;
     }
 }
 /* ukuran hp sedang */
@@ -439,10 +468,37 @@ table.social-media-list td.icon {
     .container {
         max-width: 550px;
     }
+    .feature-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-item-4 {
+        display: none;
+    }
+    .grid-item-3 {
+        display: none;
+    }
+    .grid-item-2 {
+        display: none;
+    }
 }
 /* ukuran hp agak kecil */
 @media (max-width: 700px) {
     .container {
         max-width: 400px;
+    }
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+    .grid-item-4 {
+        display: none;
+    }
+    .grid-item-3 {
+        display: none;
+    }
+    .grid-item-2 {
+        display: none;
+    }
+    .grid-item-1 {
+        display: none;
     }
 }
