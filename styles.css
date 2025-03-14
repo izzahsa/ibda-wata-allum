@@ -453,6 +453,9 @@ table.social-media-list td.icon {
         gap: 20px;
         margin: 80px auto -500px auto;
     }
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* ukuran hp besar */
@@ -550,5 +553,22 @@ table.social-media-list td.icon {
     }
     .feature-list-library {
         margin-left: 150px;
+    }
+    .welcome-image img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .welcome-image {
+        text-align: left;
+    }
+    .menu-web {
+        margin: 10px 20px 10px 50px;
+    }
+}
+/* ukuran hp sangat kecil */
+@media (max-width: 400px) {
+    .footer-container {
+        grid-template-columns: 1fr;
     }
 }
